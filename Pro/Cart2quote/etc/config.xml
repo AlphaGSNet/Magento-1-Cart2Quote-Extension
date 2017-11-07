@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Pro_Cart2quote>
+            <version>0.1.0</version>
+        </Pro_Cart2quote>
+    </modules>
+    <frontend>
+        <routers>
+            <qquoteadv>
+                <args>
+                    <modules>
+                        <Pro_Cart2quote before="Ophirah_Qquoteadv">Pro_Cart2quote</Pro_Cart2quote>
+                    </modules>
+                </args>
+            </qquoteadv>
+        </routers>
+    </frontend>
+    <global>
+        <models>
+            <qquoteadv>
+                <rewrite>
+                    <status>Pro_Cart2quote_Model_Status</status>
+                </rewrite>
+            </qquoteadv>
+        </models>
+    </global>
+</config> 
