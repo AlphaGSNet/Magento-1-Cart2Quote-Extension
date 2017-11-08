@@ -286,7 +286,7 @@ class Pro_Cart2quote_ViewController extends Ophirah_Qquoteadv_ViewController
                     
                         $billingAddress = $_quote->getBillingAddress();
                         $shippingAddress = $_quote->getShippingAddress();
-                        $billingData = array(
+               /*         $billingData = array(
                             'address_id' => $billingAddress->getData('address_id'),
                             'firstname' => $billingAddress->getData('firstname'),
                             'lastname' => $billingAddress->getData('lastname'),
@@ -313,7 +313,7 @@ class Pro_Cart2quote_ViewController extends Ophirah_Qquoteadv_ViewController
                             'country_id' => $shippingAddress->getData('country_id'),
                             'telephone' => $shippingAddress->getData('telephone'),
                             'fax' => $shippingAddress->getData('fax'),
-                        );                        
+                        );                        */
                         $onepage->saveBilling($billingData, $billingAddress->getCustomerAddressId());
                         $onepage->saveShipping($shippingData, $shippingAddress->getCustomerAddressId());
                         
